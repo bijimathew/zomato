@@ -60,6 +60,7 @@ body {
 }
 .option:hover{
   cursor: pointer;
+  box-shadow: 2px 2px 25px 1px grey;
 }
 .option img {
   width: 100%;
@@ -82,6 +83,11 @@ body {
   width: 200px;
   text-align: center;
 }
+.collection:hover{
+  box-shadow: 2px 2px 15px 1px grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .collection img {
   width: 100%;
   border-radius: 10px;
@@ -97,12 +103,16 @@ body {
   max-width: 800px;
   margin: auto;
 }
+
 .locality {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background: #fff;
   cursor: pointer;
+}
+.locality:hover{
+  box-shadow: 2px 2px 35px 1px grey;
 }
 
 /* app section */
@@ -121,4 +131,5 @@ body {
 .app-section button:hover{
   color: white;
   background-color: rgba(252, 69, 69, 0.829);
+  box-shadow: 2px 2px 35px 1px grey;
 }
