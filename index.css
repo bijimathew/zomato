@@ -56,11 +56,13 @@ body {
   text-align: center;
   border: 1px solid rgb(226, 226, 226);
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
   
 }
 .option:hover{
   cursor: pointer;
   box-shadow: 2px 2px 25px 1px grey;
+  transform: scale(1.05);
 }
 .option img {
   width: 100%;
@@ -76,17 +78,21 @@ body {
 .collection-grid {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  margin-top: 40px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 .collection {
   width: 200px;
   text-align: center;
+  transition: 0.3s ease-in-out;
 }
 .collection:hover{
   box-shadow: 2px 2px 15px 1px grey;
   border-radius: 10px;
   cursor: pointer;
+  transform: scale(1.05);
+
 }
 .collection img {
   width: 100%;
@@ -99,9 +105,10 @@ body {
 .localities-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 20px;
   max-width: 800px;
   margin: auto;
+  margin-top: 30px;
 }
 
 .locality {
@@ -110,9 +117,11 @@ body {
   border-radius: 8px;
   background: #fff;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .locality:hover{
   box-shadow: 2px 2px 35px 1px grey;
+  transform: scale(1.05);
 }
 
 /* app section */
