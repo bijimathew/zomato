@@ -22,8 +22,10 @@ body {
 }
 .head {
   background: url('assets/appetizer-7380527_1280.jpg') center no-repeat;
-  color: white;
   padding: 100px 20px;
+}
+.head p{
+  color: white;
 }
 .head img{
   height: 60px;
@@ -41,7 +43,6 @@ body {
   padding: 18px;
   width: 700px;
   outline: none;
-  border: none; 
   border-radius: 5px;
 }
 
@@ -88,7 +89,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 .collection:hover{
-  box-shadow: 2px 2px 15px 1px grey;
+  box-shadow: 2px 2px 15px grey;
   border-radius: 10px;
   cursor: pointer;
   transform: scale(1.05);
