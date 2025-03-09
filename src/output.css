@@ -14,6 +14,7 @@
     --color-amber-300: oklch(0.879 0.169 91.605);
     --color-amber-600: oklch(0.666 0.179 58.318);
     --color-amber-700: oklch(0.555 0.163 48.998);
+    --color-yellow-50: oklch(0.987 0.026 102.212);
     --color-green-600: oklch(0.627 0.194 149.214);
     --color-green-800: oklch(0.448 0.119 151.328);
     --color-sky-600: oklch(0.588 0.158 241.966);
@@ -563,9 +564,6 @@
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
-  }
-  .w-2\.5 {
-    width: calc(var(--spacing) * 2.5);
   }
   .w-2xs {
     width: var(--container-2xs);
@@ -2359,6 +2357,11 @@
       color: var(--color-white);
     }
   }
+  .focus\:text-yellow-50 {
+    &:focus {
+      color: var(--color-yellow-50);
+    }
+  }
   .focus\:ring-2 {
     &:focus {
       --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
@@ -2475,6 +2478,61 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:bg-\[url\)\] {
+    @media (width >= 48rem) {
+      background-color: url);
+    }
+  }
+  .md\:bg-\[url\] {
+    @media (width >= 48rem) {
+      background-color: url;
+    }
+  }
+  .md\:bg-\[url\(\'\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('');
+    }
+  }
+  .md\:bg-\[url\(\'\/\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/');
+    }
+  }
+  .md\:bg-\[url\(\'\/ass\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/ass');
+    }
+  }
+  .md\:bg-\[url\(\'\/asset\/\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/asset/');
+    }
+  }
+  .md\:bg-\[url\(\'\/asset\/a\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/asset/a');
+    }
+  }
+  .md\:bg-\[url\(\'\/asset\/appetizer-7380527_1280\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/asset/appetizer-7380527_1280.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'\/asset\/asset\/appetizer-7380527_1280\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/asset/asset/appetizer-7380527_1280.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'\/asset\/home\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('/asset/home.jpg');
+    }
+  }
+  .md\:bg-\[url\(\)\] {
+    @media (width >= 48rem) {
+      background-image: url();
     }
   }
   .md\:p-4 {
@@ -2841,6 +2899,10 @@
   inherits: false;
 }
 @property --tw-contain-style {
+  syntax: "*";
+  inherits: false;
+}
+tw-contain-style {
   syntax: "*";
   inherits: false;
 }
