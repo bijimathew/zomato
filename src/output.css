@@ -565,9 +565,6 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
-  .w-2\.5 {
-    width: calc(var(--spacing) * 2.5);
-  }
   .w-2xs {
     width: var(--container-2xs);
   }
@@ -2913,7 +2910,10 @@
   syntax: "*";
   inherits: false;
 }
-ontrast {
+ax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
   syntax: "*";
   inherits: false;
 }
