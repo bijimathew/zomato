@@ -1412,6 +1412,9 @@
   .bg-\[url\(\'\/asset\/main\.jpg\'\)\] {
     background-image: url('/asset/main.jpg');
   }
+  .bg-\[url\(\'asset\/main\.jpg\'\)\] {
+    background-image: url('asset/main.jpg');
+  }
   .bg-\[url\(\/asset\/main\.jpg\)\] {
     background-image: url(/asset/main.jpg);
   }
@@ -2531,6 +2534,11 @@
   .md\:bg-\[url\(\'\/asset\/home\.jpg\'\)\] {
     @media (width >= 48rem) {
       background-image: url('/asset/home.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'asset\/home\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('asset/home.jpg');
     }
   }
   .md\:bg-\[url\(\)\] {
